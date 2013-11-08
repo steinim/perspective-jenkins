@@ -13,13 +13,15 @@ Using Vagrant and Virtualbox:
 -----------------------------
 
 ```git clone https://github.com/dotcloud/docker.git```
+
 ```cd docker```
+
 ```vagrant up```
 
-To forward a port from Vagrant to local machine add the following to Vagrantfile:
+Add the following to Vagrant file to forward a port from Virtualbox to local machine:
 ```config.vm.forward_port <port to forward from>, <port to forward to>```
 
-To add git add the following to Vagrantfile:
+Add git to the box: 
 ```config.vm.provision :shell, :inline => "apt-get install -q -y git"```
 
 License
