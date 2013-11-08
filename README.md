@@ -21,8 +21,12 @@ Using Vagrant and Virtualbox:
 Add the following to Vagrant file to forward a port from Virtualbox to local machine:
 ```config.vm.forward_port <port to forward from>, <port to forward to>```
 
+Run ```vagrant reload``` to set up the forwarding.
+
 Add git to the box: 
 ```config.vm.provision :shell, :inline => "apt-get install -q -y git"```
+
+Run ```vagrant provision``` to make it happen.
 
 License
 -------
